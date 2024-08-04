@@ -5,12 +5,12 @@ import Layout from "@/components/Layout";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <AuthProvider>
-      <div data-theme="light">
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </div>
-    </AuthProvider>
+    // <AuthProvider>
+    <div data-theme="light">
+      {/* <Layout> */}
+      <Component {...pageProps} />
+      {/* </Layout> */}
+    </div>
+    // </AuthProvider>
   );
 }
